@@ -19,9 +19,10 @@ STOP_VAL = 'END NOTES'
 
 # Names of pickle storage
 HOUSING_PICKLE = '../data/housing.pickle'
-PERSON_PICKLE = '../data/person.pickle'
+PERSON_PICKLE = '../data/population.pickle'
 
 #Regular Expressions
 FEATURE_REGEX = '[A-Z]+[0-9]*[ ]+[0-9]+' # Locates features in txt file
 
+USER_GENERATED_DIR = './user_generated/'
 
