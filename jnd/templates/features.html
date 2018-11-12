@@ -1,0 +1,45 @@
+
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="col_w420 float_l">
+
+             <div style="width:100%; overflow:auto;">
+                        <h3><span class="CL"> Feature List :</span></h3>
+					<div class="table">
+					    <div class="header">
+                            <div class="cell_mini">SL #  </div>
+                            <div class="cell_small">Type  </div>
+                            <div class="cell_small">Code </div>
+                            <div class="cell_large">Name </div>
+                        </div>
+
+                        <div class="rowGroup">
+                        {%  for feature in features %}
+                                <div class="row">
+                                    <div class="cell_mini">{{ feature.id }}</div>
+                                    <div class="cell_small">{{ feature.type }}</div>
+                                    <div class="cell_small"> {{ feature.code }}</div>
+                                    <div class="cell_large">{{ feature.name}}</div>
+
+                                </div>
+                        {%  endfor %}
+
+                            <div class="row">
+                                <div class="cell_mini"> </div>
+                                 <div class="cell_small"> </div>
+                                 <div class="cell_small">  </div>
+                                <div class="cell_large"> &nbsp; </div>
+
+					    </div>
+				</div>
+
+
+					  <br />
+					</div>  <!-- divTable-->
+
+             </div>
+    </div>
+
+{% endblock %}

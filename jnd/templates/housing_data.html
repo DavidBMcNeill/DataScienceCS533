@@ -1,0 +1,49 @@
+
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="col_w420 float_l">
+
+    <div style="width:100%; overflow:auto;">
+        <div id="cp_contact_form">
+            {% from "includes/_formhelpers.html" import render_field %}
+            <form method="post" name="pay_form" action="/housing_data">
+
+                <div class="image left">
+                         {{render_field(form.feature, class_="form-control")}}
+
+                    <input type="submit" class="submit_btn float_l" name="submit" id="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
+        {% if posts :%}
+            <div class="table">
+                            <div class="header">
+                               <div class="cell_large">Click below to download </div>
+                            </div>
+
+                            <div class="rowGroup">
+                            {%  for post in posts %}
+                                    <div class="row">
+                                        <div class="cell_large">
+                                            <a href="/return_file/{{ post.filename}}" target="blank"><button class='btn btn-default'>Download!</button></a>
+                                        </div>
+
+                                    </div>
+
+                            {%  endfor %}
+
+                                <div class="row">
+                                    <div class="cell_large"> &nbsp; </div>
+
+                                </div>
+                            </div>
+            </div>
+        {% endif %}
+
+
+    </div>
+</div>
+
+{% endblock %}

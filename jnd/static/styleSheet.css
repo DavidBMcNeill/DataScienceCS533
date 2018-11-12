@@ -1,0 +1,199 @@
+
+.divHeaderTable
+{
+            width: 100%;
+            padding-bottom:5px;
+            display:block;
+            font-family: Cambria;
+}
+.divHeaderRow
+{
+            width: 100%; /* add extra that you want to for header column */
+            display:block;
+            height:105px;
+            font-family: Cambria;
+}
+.divHeaderColumn
+{
+            float: left;
+            width: 33%;
+            display:block;
+}
+.divTable
+{
+            font-family: Cambria;
+            font-size: 15px;
+            color: black;
+            width: 97%;
+            display:block;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-right:10px;
+            padding-left:10px;
+	    overflow: auto;
+}
+.divRow
+{
+         font-family: Cambria;
+         width: 99%;
+         display:block;
+         padding-bottom:5px;
+}
+.divColumn
+{
+         float: left;
+         width: 24%;
+         display:block;
+}
+
+.divColumn10
+{
+         float: left;
+         width: 10%;
+         display:block;
+		 border-top: 1px solid #CCCCCC;
+		 border-left: 1px solid #CCCCCC;
+}
+
+.divColumn_bare
+{
+         float: left;
+         width: 10%;
+         display:block;
+		 text-align:right;
+		 border: 1px solid #FFF;
+}
+
+.divColumn10_right
+{
+         float: left;
+         width: 10%;
+         display:block;
+		 border-top: 1px solid #CCCCCC;
+		 border-left: 1px solid #CCCCCC;
+		 border-right: 1px solid #CCCCCC;
+}
+
+.divColumn10_bottom_right
+{
+         float: left;
+         width: 10%;
+         display:block;
+		 border: 1px solid #CCCCCC;
+}
+
+.divColumn10_bottom
+{
+         float: left;
+         width: 10%;
+         display:block;
+		 border-top: 1px solid #CCCCCC;
+		 border-left: 1px solid #CCCCCC;
+		 border-bottom: 1px solid #CCCCCC;
+}
+
+/*      new*/
+
+.divColumn_bare_15
+{
+         float: left;
+         width: 15%;
+         display:block;
+		 text-align:right;
+		 border: 1px solid #FFF;
+}
+
+.divColumn15_right
+{
+         float: left;
+         width: 15%;
+         display:block;
+		 border-top: 1px solid #CCCCCC;
+		 border-left: 1px solid #CCCCCC;
+		 border-right: 1px solid #CCCCCC;
+}
+
+.divColumn15_bottom_right
+{
+         float: left;
+         width: 15%;
+         display:block;
+		 border: 1px solid #CCCCCC;
+}
+
+.divColumn15_bottom
+{
+         float: left;
+         width: 15%;
+         display:block;
+		 border-top: 1px solid #CCCCCC;
+		 border-left: 1px solid #CCCCCC;
+		 border-bottom: 1px solid #CCCCCC;
+}
+
+
+
+/*       */
+
+
+.divColumn5
+{
+         float: left;
+         width: 5%;
+         display:block;
+		 border-top: 1px solid #CCCCCC;
+		 border-left: 1px solid #CCCCCC;
+}
+
+.divColumn5_bottom
+{
+         float: left;
+         width: 5%;
+         display:block;
+		 border-top: 1px solid #CCCCCC;
+		 border-left: 1px solid #CCCCCC;
+		 border-bottom: 1px solid #CCCCCC;
+}
+
+label.head{font-weight:bold;}
+
+
+
+
+
+
+.table {
+    font-family: Cambria;
+         display:table;
+	width: 100%;
+}
+.header {
+    display:table-header-group;
+    font-weight:bold;
+}
+.rowGroup {
+    display:table-row-group;
+}
+.row {
+    display:table-row;
+}
+.cell {
+    display:table-cell;
+    width:8%;
+	border : 1px solid #CCC;
+}
+.cell_mini {
+    display:table-cell;
+    width:2%;
+	border : 1px solid #CCC;
+}
+.cell_small {
+    display:table-cell;
+    width:5%;
+	border : 1px solid #CCC;
+}
+.cell_large {
+    display:table-cell;
+    width:30%;
+	border : 1px solid #CCC;
+}

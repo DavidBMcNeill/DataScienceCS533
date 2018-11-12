@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="CACHE-CONTROL" CONTENT="NO-CACHE"/>
+    <meta http-equiv="EXPIRES" CONTENT="01 Jan 1970 00:00:00 GMT"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='jquery.jcarousel.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleSheet.css') }}">
+    <!--[if IE 6]><link rel="stylesheet" href="{{ url_for('static', filename='ie6.css') }}" media="all" /><![endif]-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='static/images/favicon.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='menuStyles.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery-1.4.2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='menuScript.js') }}"></script>
+    <title>JND Analytics</title>
+</head>
+<body>
+<div class="shell">
+  <div class="border">
+    {% include 'includes/_header.html' %}
+    {% include 'includes/_navigation.html' %}
+
+
+
+    <div id="main">
+        <div id="content" class="left">
+            {% block body %}
+
+            {%  endblock %}
+        </div>
+
+        <div class="cl">&nbsp;</div>
+    </div>
+    {% include 'includes/_shadow.html' %}
+  </div>
+
+    {% include 'includes/_footer.html' %}
+
+</div>
+</body>
+<head>
+</head>
+</html>

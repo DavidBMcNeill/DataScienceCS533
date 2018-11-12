@@ -1,0 +1,29 @@
+
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="col_w420 float_l">
+
+    <div style="width:100%; overflow:auto;">
+        <div id="cp_contact_form">
+            {% from "includes/_formhelpers.html" import render_field %}
+            <form method="post" name="correlation_form" action="/correlations">
+
+                <div class="image left">
+                         {{render_field(form.correlation)}}
+                </br>
+                    <input type="submit" class="submit_btn float_l" name="submit" id="submit" value="Show" />
+                </div>
+            </form>
+        </div>
+        {% if filename :%}
+            <img src="{{url_for('send_image', filename=filename)}}" alt="" width="70%" height="auto">
+
+        {% endif %}
+
+
+    </div>
+</div>
+
+{% endblock %}
